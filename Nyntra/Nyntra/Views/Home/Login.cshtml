@@ -1,0 +1,139 @@
+﻿@model Nyntra.Models.User
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Home_LayoutPage1.cshtml";
+}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            background-color: #fdefee;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 18px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            width: 330px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        h2 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 16px;
+        }
+
+        input[type="text"], input[type="password"], select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            height: 38px;
+            box-sizing: border-box;
+        }
+
+        .terms {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 16px;
+        }
+
+            .terms a {
+                color: hotpink;
+                text-decoration: none;
+            }
+
+        input[type="submit"] {
+            background-color: #f0f0f0;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            font-size: 14px;
+            color: #333;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 8px;
+        }
+
+        .help-text {
+            font-size: 12px;
+            color: #666;
+        }
+
+            .help-text a {
+                color: hotpink;
+                text-decoration: none;
+            }
+
+        .container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2022/3/16/d4edb37c-aee8-4989-86f4-33b117edd4bc1647415464555-Banner_Login-Landing-page--1-.jpg" alt="Promotional Image">
+
+        <h2>Login Or Signup</h2>
+
+        @using (Html.BeginForm("Login", "Home", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+
+            @Html.TextBoxFor(m => m.Email, new { @placeholder = "Enter your Email", @required = "required", @id = "email" })
+            <br><br>
+
+            @Html.PasswordFor(m => m.Password, new { @placeholder = "Enter your Password", @required = "required", @id = "password" })
+            <br><br>
+
+            @Html.DropDownListFor(m => m.Role, new SelectList(new List<SelectListItem>
+            {
+                new SelectListItem { Text = "User", Value = "User" },
+                new SelectListItem { Text = "Admin", Value = "Admin" }
+            }, "Value", "Text"), "Select Role")
+            <br><br>
+
+            <input id="btn" type="submit" value="Login"><br><br>
+
+            <p class="terms">By continuing I agree to the <a href="https://www.myntra.com/termsofuse">Terms of Use & Privacy Policy</a></p>
+            <p class="help-text">Have trouble logging in? <a href="#">Get Help</a></p>
+            <p class="register">New user? <a href="@Url.Action("Register", "Home")">Register here</a></p>
+        }
+    </div>
+
+</body>
+</html>
+<script src="~/Conetent/login/login.js"></script>
+ 
+
+
+
+
+

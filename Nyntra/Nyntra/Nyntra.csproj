@@ -1,0 +1,1142 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{84F71004-00F7-47D0-B3EA-8783F7B9337A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nyntra</RootNamespace>
+    <AssemblyName>Nyntra</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44350</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.9\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.9\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.9\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.9\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.9\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.2.0.1\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.9\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Conetent\Admin\.gitignore" />
+    <Content Include="Conetent\Admin\app-calendar.html" />
+    <Content Include="Conetent\Admin\app-chat.html" />
+    <Content Include="Conetent\Admin\assets\extra-libs\c3\c3.min.css" />
+    <Content Include="Conetent\Admin\assets\extra-libs\c3\c3.min.js" />
+    <Content Include="Conetent\Admin\assets\extra-libs\c3\d3.min.js" />
+    <Content Include="Conetent\Admin\assets\extra-libs\datatables.net-bs4\css\dataTables.bootstrap4.css" />
+    <Content Include="Conetent\Admin\assets\extra-libs\datatables.net-bs4\css\dataTables.bootstrap4.min.css" />
+    <Content Include="Conetent\Admin\assets\extra-libs\datatables.net-bs4\js\dataTables.bootstrap4.js" />
+    <Content Include="Conetent\Admin\assets\extra-libs\datatables.net-bs4\js\dataTables.bootstrap4.min.js" />
+    <Content Include="Conetent\Admin\assets\extra-libs\datatables.net\js\jquery.dataTables.js" />
+    <Content Include="Conetent\Admin\assets\extra-libs\datatables.net\js\jquery.dataTables.min.js" />
+    <Content Include="Conetent\Admin\assets\extra-libs\datatables.net\License.txt" />
+    <Content Include="Conetent\Admin\assets\extra-libs\jvector\gdp-data.js" />
+    <Content Include="Conetent\Admin\assets\extra-libs\jvector\jquery-jvectormap-2.0.2.css" />
+    <Content Include="Conetent\Admin\assets\extra-libs\jvector\jquery-jvectormap-2.0.2.min.js" />
+    <Content Include="Conetent\Admin\assets\extra-libs\jvector\jquery-jvectormap-asia-mill.js" />
+    <Content Include="Conetent\Admin\assets\extra-libs\jvector\jquery-jvectormap-au-mill.js" />
+    <Content Include="Conetent\Admin\assets\extra-libs\jvector\jquery-jvectormap-ca-lcc.js" />
+    <Content Include="Conetent\Admin\assets\extra-libs\jvector\jquery-jvectormap-de-mill.js" />
+    <Content Include="Conetent\Admin\assets\extra-libs\jvector\jquery-jvectormap-europe-mill-en.js" />
+    <Content Include="Conetent\Admin\assets\extra-libs\jvector\jquery-jvectormap-in-mill.js" />
+    <Content Include="Conetent\Admin\assets\extra-libs\jvector\jquery-jvectormap-uk-mill-en.js" />
+    <Content Include="Conetent\Admin\assets\extra-libs\jvector\jquery-jvectormap-us-aea-en.js" />
+    <Content Include="Conetent\Admin\assets\extra-libs\jvector\jquery-jvectormap-us-il-chicago-mill-en.js" />
+    <Content Include="Conetent\Admin\assets\extra-libs\jvector\jquery-jvectormap-world-mill-en.js" />
+    <Content Include="Conetent\Admin\assets\extra-libs\jvector\jvectormap.custom.js" />
+    <Content Include="Conetent\Admin\assets\extra-libs\knob\jquery.knob.js" />
+    <Content Include="Conetent\Admin\assets\extra-libs\knob\jquery.knob.min.js" />
+    <Content Include="Conetent\Admin\assets\extra-libs\prism\prism-old.js" />
+    <Content Include="Conetent\Admin\assets\extra-libs\prism\prism.css" />
+    <Content Include="Conetent\Admin\assets\extra-libs\prism\prism.js" />
+    <Content Include="Conetent\Admin\assets\extra-libs\sparkline\sparkline.js" />
+    <Content Include="Conetent\Admin\assets\extra-libs\taskboard\css\demo.css" />
+    <Content Include="Conetent\Admin\assets\extra-libs\taskboard\css\jquery-ui.min.css" />
+    <Content Include="Conetent\Admin\assets\extra-libs\taskboard\css\lobilist.css" />
+    <Content Include="Conetent\Admin\assets\extra-libs\taskboard\css\lobilist.min.css" />
+    <Content Include="Conetent\Admin\assets\extra-libs\taskboard\example1\delete.php" />
+    <Content Include="Conetent\Admin\assets\extra-libs\taskboard\example1\insert.php" />
+    <Content Include="Conetent\Admin\assets\extra-libs\taskboard\example1\update.php" />
+    <Content Include="Conetent\Admin\assets\extra-libs\taskboard\js\demo.js" />
+    <Content Include="Conetent\Admin\assets\extra-libs\taskboard\js\jquery-ui.min.js" />
+    <Content Include="Conetent\Admin\assets\extra-libs\taskboard\js\jquery.ui.touch-punch-improved.js" />
+    <Content Include="Conetent\Admin\assets\extra-libs\taskboard\js\lobibox.min.js" />
+    <Content Include="Conetent\Admin\assets\extra-libs\taskboard\js\lobilist.js" />
+    <Content Include="Conetent\Admin\assets\extra-libs\taskboard\js\lobilist.min.js" />
+    <Content Include="Conetent\Admin\assets\extra-libs\taskboard\js\task-init.js" />
+    <Content Include="Conetent\Admin\assets\images\alert\alert.png" />
+    <Content Include="Conetent\Admin\assets\images\alert\alert2.png" />
+    <Content Include="Conetent\Admin\assets\images\alert\alert3.png" />
+    <Content Include="Conetent\Admin\assets\images\alert\alert4.png" />
+    <Content Include="Conetent\Admin\assets\images\alert\alert5.png" />
+    <Content Include="Conetent\Admin\assets\images\alert\alert6.png" />
+    <Content Include="Conetent\Admin\assets\images\alert\alert7.png" />
+    <Content Include="Conetent\Admin\assets\images\alert\model.png" />
+    <Content Include="Conetent\Admin\assets\images\alert\model2.png" />
+    <Content Include="Conetent\Admin\assets\images\alert\model3.png" />
+    <Content Include="Conetent\Admin\assets\images\background\active-bg.jpg" />
+    <Content Include="Conetent\Admin\assets\images\background\active-bg.png" />
+    <Content Include="Conetent\Admin\assets\images\background\beauty.jpg" />
+    <Content Include="Conetent\Admin\assets\images\background\error-bg.jpg" />
+    <Content Include="Conetent\Admin\assets\images\background\img5.jpg" />
+    <Content Include="Conetent\Admin\assets\images\background\img5.png" />
+    <Content Include="Conetent\Admin\assets\images\background\login-register.jpg" />
+    <Content Include="Conetent\Admin\assets\images\background\megamenubg.jpg" />
+    <Content Include="Conetent\Admin\assets\images\background\nyan-cat.gif" />
+    <Content Include="Conetent\Admin\assets\images\background\profile-bg.jpg" />
+    <Content Include="Conetent\Admin\assets\images\background\sidebarbg.png" />
+    <Content Include="Conetent\Admin\assets\images\background\socialbg.jpg" />
+    <Content Include="Conetent\Admin\assets\images\background\user-bg.jpg" />
+    <Content Include="Conetent\Admin\assets\images\background\user-info.jpg" />
+    <Content Include="Conetent\Admin\assets\images\background\weatherbg.jpg" />
+    <Content Include="Conetent\Admin\assets\images\big\1.jpg" />
+    <Content Include="Conetent\Admin\assets\images\big\3.jpg" />
+    <Content Include="Conetent\Admin\assets\images\big\5.jpg" />
+    <Content Include="Conetent\Admin\assets\images\big\auth-bg.jpg" />
+    <Content Include="Conetent\Admin\assets\images\big\auth-bg2.jpg" />
+    <Content Include="Conetent\Admin\assets\images\big\d2.jpg" />
+    <Content Include="Conetent\Admin\assets\images\big\icon.png" />
+    <Content Include="Conetent\Admin\assets\images\big\img1.jpg" />
+    <Content Include="Conetent\Admin\assets\images\big\img2.jpg" />
+    <Content Include="Conetent\Admin\assets\images\big\img3.jpg" />
+    <Content Include="Conetent\Admin\assets\images\big\img4.jpg" />
+    <Content Include="Conetent\Admin\assets\images\big\img5.jpg" />
+    <Content Include="Conetent\Admin\assets\images\big\img6.jpg" />
+    <Content Include="Conetent\Admin\assets\images\browser\chrome-logo.png" />
+    <Content Include="Conetent\Admin\assets\images\browser\edge-logo.png" />
+    <Content Include="Conetent\Admin\assets\images\browser\firefox-logo.png" />
+    <Content Include="Conetent\Admin\assets\images\browser\internet-logo.png" />
+    <Content Include="Conetent\Admin\assets\images\browser\netscape-logo.png" />
+    <Content Include="Conetent\Admin\assets\images\browser\opera-logo.png" />
+    <Content Include="Conetent\Admin\assets\images\browser\photoshop.jpg" />
+    <Content Include="Conetent\Admin\assets\images\browser\safari-logo.png" />
+    <Content Include="Conetent\Admin\assets\images\browser\sketch.jpg" />
+    <Content Include="Conetent\Admin\assets\images\custom-select.png" />
+    <Content Include="Conetent\Admin\assets\images\docs\gulp.jpg" />
+    <Content Include="Conetent\Admin\assets\images\favicon.png" />
+    <Content Include="Conetent\Admin\assets\images\gallery\chair.jpg" />
+    <Content Include="Conetent\Admin\assets\images\gallery\chair2.jpg" />
+    <Content Include="Conetent\Admin\assets\images\gallery\chair3.jpg" />
+    <Content Include="Conetent\Admin\assets\images\gallery\chair4.jpg" />
+    <Content Include="Conetent\Admin\assets\images\HeroImage.jpg" />
+    <Content Include="Conetent\Admin\assets\images\img1.jpg" />
+    <Content Include="Conetent\Admin\assets\images\img2.jpg" />
+    <Content Include="Conetent\Admin\assets\images\img3.jpg" />
+    <Content Include="Conetent\Admin\assets\images\landingpage\banne-img.png" />
+    <Content Include="Conetent\Admin\assets\images\landingpage\banner-bg.png" />
+    <Content Include="Conetent\Admin\assets\images\landingpage\brand-logos.png" />
+    <Content Include="Conetent\Admin\assets\images\landingpage\db.png" />
+    <Content Include="Conetent\Admin\assets\images\landingpage\f1.png" />
+    <Content Include="Conetent\Admin\assets\images\landingpage\f2.png" />
+    <Content Include="Conetent\Admin\assets\images\landingpage\f3.png" />
+    <Content Include="Conetent\Admin\assets\images\landingpage\favicon.png" />
+    <Content Include="Conetent\Admin\assets\images\landingpage\icon-sprite.jpg" />
+    <Content Include="Conetent\Admin\assets\images\landingpage\img2.jpg" />
+    <Content Include="Conetent\Admin\assets\images\landingpage\img3.jpg" />
+    <Content Include="Conetent\Admin\assets\images\landingpage\logo.png" />
+    <Content Include="Conetent\Admin\assets\images\landingpage\logos.png" />
+    <Content Include="Conetent\Admin\assets\images\landingpage\right-img.png" />
+    <Content Include="Conetent\Admin\assets\images\landingpage\section-bg.png" />
+    <Content Include="Conetent\Admin\assets\images\landingpage\section-img.png" />
+    <Content Include="Conetent\Admin\assets\images\logo-icon.png" />
+    <Content Include="Conetent\Admin\assets\images\logo-light-text.png" />
+    <Content Include="Conetent\Admin\assets\images\logo-text.png" />
+    <Content Include="Conetent\Admin\assets\images\product\chair.png" />
+    <Content Include="Conetent\Admin\assets\images\product\chair2.png" />
+    <Content Include="Conetent\Admin\assets\images\product\chair3.png" />
+    <Content Include="Conetent\Admin\assets\images\product\chair4.png" />
+    <Content Include="Conetent\Admin\assets\images\product\ipad.png" />
+    <Content Include="Conetent\Admin\assets\images\product\iphone.png" />
+    <Content Include="Conetent\Admin\assets\images\product\iwatch.png" />
+    <Content Include="Conetent\Admin\assets\images\product\p1.jpg" />
+    <Content Include="Conetent\Admin\assets\images\product\p2.jpg" />
+    <Content Include="Conetent\Admin\assets\images\product\p3.jpg" />
+    <Content Include="Conetent\Admin\assets\images\product\p4.jpg" />
+    <Content Include="Conetent\Admin\assets\images\rating\cancel-off.png" />
+    <Content Include="Conetent\Admin\assets\images\rating\cancel-on.png" />
+    <Content Include="Conetent\Admin\assets\images\rating\heart.png" />
+    <Content Include="Conetent\Admin\assets\images\rating\like.png" />
+    <Content Include="Conetent\Admin\assets\images\rating\star-half-mono.png" />
+    <Content Include="Conetent\Admin\assets\images\rating\star-half.png" />
+    <Content Include="Conetent\Admin\assets\images\rating\star-off.png" />
+    <Content Include="Conetent\Admin\assets\images\rating\star-on.png" />
+    <Content Include="Conetent\Admin\assets\images\tooltip\Euclid.png" />
+    <Content Include="Conetent\Admin\assets\images\tooltip\shape1.svg" />
+    <Content Include="Conetent\Admin\assets\images\tooltip\shape2.svg" />
+    <Content Include="Conetent\Admin\assets\images\tooltip\shape3.svg" />
+    <Content Include="Conetent\Admin\assets\images\tooltip\tooltip1.svg" />
+    <Content Include="Conetent\Admin\assets\images\tooltip\tooltip2.svg" />
+    <Content Include="Conetent\Admin\assets\images\tooltip\tooltip3.svg" />
+    <Content Include="Conetent\Admin\assets\images\users\1-old.jpg" />
+    <Content Include="Conetent\Admin\assets\images\users\1.jpg" />
+    <Content Include="Conetent\Admin\assets\images\users\1.png" />
+    <Content Include="Conetent\Admin\assets\images\users\2.jpg" />
+    <Content Include="Conetent\Admin\assets\images\users\2.png" />
+    <Content Include="Conetent\Admin\assets\images\users\3.jpg" />
+    <Content Include="Conetent\Admin\assets\images\users\3.png" />
+    <Content Include="Conetent\Admin\assets\images\users\4.jpg" />
+    <Content Include="Conetent\Admin\assets\images\users\5.jpg" />
+    <Content Include="Conetent\Admin\assets\images\users\6.jpg" />
+    <Content Include="Conetent\Admin\assets\images\users\7.jpg" />
+    <Content Include="Conetent\Admin\assets\images\users\8.jpg" />
+    <Content Include="Conetent\Admin\assets\images\users\agent.jpg" />
+    <Content Include="Conetent\Admin\assets\images\users\agent2.jpg" />
+    <Content Include="Conetent\Admin\assets\images\users\d1.jpg" />
+    <Content Include="Conetent\Admin\assets\images\users\d2.jpg" />
+    <Content Include="Conetent\Admin\assets\images\users\d3.jpg" />
+    <Content Include="Conetent\Admin\assets\images\users\d4.jpg" />
+    <Content Include="Conetent\Admin\assets\images\users\d5.jpg" />
+    <Content Include="Conetent\Admin\assets\images\users\profile-pic-2.jpg" />
+    <Content Include="Conetent\Admin\assets\images\users\profile-pic.jpg" />
+    <Content Include="Conetent\Admin\assets\images\users\profile.png" />
+    <Content Include="Conetent\Admin\assets\images\users\widget-table-pic1.jpg" />
+    <Content Include="Conetent\Admin\assets\images\users\widget-table-pic2.jpg" />
+    <Content Include="Conetent\Admin\assets\images\users\widget-table-pic3.jpg" />
+    <Content Include="Conetent\Admin\assets\images\users\widget-table-pic4.jpg" />
+    <Content Include="Conetent\Admin\assets\images\widgets\1.jpg" />
+    <Content Include="Conetent\Admin\assets\images\widgets\2.jpg" />
+    <Content Include="Conetent\Admin\assets\images\widgets\3.jpg" />
+    <Content Include="Conetent\Admin\assets\images\widgets\widget-carousel-2.jpg" />
+    <Content Include="Conetent\Admin\assets\images\widgets\widget-carousel.jpg" />
+    <Content Include="Conetent\Admin\assets\libs\bootstrap\dist\css\bootstrap-grid.css" />
+    <Content Include="Conetent\Admin\assets\libs\bootstrap\dist\css\bootstrap-grid.min.css" />
+    <Content Include="Conetent\Admin\assets\libs\bootstrap\dist\css\bootstrap-reboot.css" />
+    <Content Include="Conetent\Admin\assets\libs\bootstrap\dist\css\bootstrap-reboot.min.css" />
+    <Content Include="Conetent\Admin\assets\libs\bootstrap\dist\css\bootstrap.css" />
+    <Content Include="Conetent\Admin\assets\libs\bootstrap\dist\css\bootstrap.min.css" />
+    <Content Include="Conetent\Admin\assets\libs\bootstrap\dist\js\bootstrap.bundle.js" />
+    <Content Include="Conetent\Admin\assets\libs\bootstrap\dist\js\bootstrap.bundle.min.js" />
+    <Content Include="Conetent\Admin\assets\libs\bootstrap\dist\js\bootstrap.js" />
+    <Content Include="Conetent\Admin\assets\libs\bootstrap\dist\js\bootstrap.min.js" />
+    <Content Include="Conetent\Admin\assets\libs\chart.js\dist\Chart.bundle.min.js" />
+    <Content Include="Conetent\Admin\assets\libs\chart.js\dist\Chart.min.css" />
+    <Content Include="Conetent\Admin\assets\libs\chart.js\dist\Chart.min.js" />
+    <Content Include="Conetent\Admin\assets\libs\chartist-plugin-tooltips\dist\chartist-plugin-tooltip.css" />
+    <Content Include="Conetent\Admin\assets\libs\chartist-plugin-tooltips\dist\chartist-plugin-tooltip.min.js" />
+    <Content Include="Conetent\Admin\assets\libs\chartist\dist\chartist.min.css" />
+    <Content Include="Conetent\Admin\assets\libs\chartist\dist\chartist.min.js" />
+    <Content Include="Conetent\Admin\assets\libs\datatables.net-bs4\css\dataTables.bootstrap4.min.css" />
+    <Content Include="Conetent\Admin\assets\libs\datatables.net-bs4\js\dataTables.bootstrap4.min.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\fullcalendar.min.css" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\fullcalendar.min.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\fullcalendar.print.min.css" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\gcal.min.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale-all.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\af.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\ar-dz.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\ar-kw.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\ar-ly.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\ar-ma.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\ar-sa.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\ar-tn.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\ar.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\be.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\bg.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\bs.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\ca.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\cs.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\da.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\de-at.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\de-ch.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\de.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\el.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\en-au.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\en-ca.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\en-gb.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\en-ie.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\en-nz.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\es-do.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\es-us.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\es.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\et.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\eu.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\fa.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\fi.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\fr-ca.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\fr-ch.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\fr.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\gl.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\he.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\hi.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\hr.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\hu.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\id.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\is.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\it.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\ja.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\ka.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\kk.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\ko.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\lb.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\lt.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\lv.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\mk.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\ms-my.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\ms.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\nb.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\nl-be.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\nl.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\nn.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\pl.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\pt-br.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\pt.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\ro.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\ru.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\sk.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\sl.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\sq.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\sr-cyrl.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\sr.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\sv.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\th.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\tr.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\uk.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\vi.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\zh-cn.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\zh-hk.js" />
+    <Content Include="Conetent\Admin\assets\libs\fullcalendar\dist\locale\zh-tw.js" />
+    <Content Include="Conetent\Admin\assets\libs\jquery\dist\core.js" />
+    <Content Include="Conetent\Admin\assets\libs\jquery\dist\jquery.min.js" />
+    <Content Include="Conetent\Admin\assets\libs\jquery\dist\jquery.slim.min.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\ender.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\af.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\ar-dz.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\ar-kw.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\ar-ly.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\ar-ma.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\ar-sa.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\ar-tn.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\ar.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\az.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\be.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\bg.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\bm.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\bn.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\bo.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\br.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\bs.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\ca.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\cs.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\cv.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\cy.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\da.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\de-at.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\de-ch.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\de.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\dv.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\el.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\en-au.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\en-ca.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\en-gb.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\en-ie.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\en-il.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\en-nz.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\en-SG.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\eo.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\es-do.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\es-us.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\es.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\et.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\eu.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\fa.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\fi.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\fo.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\fr-ca.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\fr-ch.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\fr.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\fy.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\ga.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\gd.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\gl.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\gom-latn.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\gu.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\he.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\hi.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\hr.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\hu.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\hy-am.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\id.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\is.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\it-ch.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\it.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\ja.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\jv.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\ka.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\kk.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\km.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\kn.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\ko.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\ku.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\ky.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\lb.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\lo.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\lt.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\lv.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\me.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\mi.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\mk.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\ml.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\mn.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\mr.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\ms-my.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\ms.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\mt.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\my.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\nb.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\ne.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\nl-be.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\nl.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\nn.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\pa-in.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\pl.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\pt-br.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\pt.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\ro.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\ru.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\sd.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\se.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\si.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\sk.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\sl.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\sq.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\sr-cyrl.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\sr.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\ss.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\sv.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\sw.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\ta.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\te.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\tet.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\tg.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\th.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\tl-ph.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\tlh.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\tr.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\tzl.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\tzm-latn.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\tzm.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\ug-cn.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\uk.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\ur.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\uz-latn.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\uz.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\vi.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\x-pseudo.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\yo.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\zh-cn.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\zh-hk.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\locale\zh-tw.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\min\locales.min.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\min\moment-with-locales.min.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\min\moment.min.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\moment.js" />
+    <Content Include="Conetent\Admin\assets\libs\moment\package.js" />
+    <Content Include="Conetent\Admin\assets\libs\morris.js\morris.css" />
+    <Content Include="Conetent\Admin\assets\libs\morris.js\morris.min.js" />
+    <Content Include="Conetent\Admin\assets\libs\perfect-scrollbar\dist\css\perfect-scrollbar.min.css" />
+    <Content Include="Conetent\Admin\assets\libs\perfect-scrollbar\dist\js\perfect-scrollbar.jquery.min.js" />
+    <Content Include="Conetent\Admin\assets\libs\perfect-scrollbar\dist\js\perfect-scrollbar.min.js" />
+    <Content Include="Conetent\Admin\assets\libs\perfect-scrollbar\dist\perfect-scrollbar.common.js" />
+    <Content Include="Conetent\Admin\assets\libs\perfect-scrollbar\dist\perfect-scrollbar.esm.js" />
+    <Content Include="Conetent\Admin\assets\libs\perfect-scrollbar\dist\perfect-scrollbar.jquery.min.js" />
+    <Content Include="Conetent\Admin\assets\libs\perfect-scrollbar\dist\perfect-scrollbar.min.js" />
+    <Content Include="Conetent\Admin\assets\libs\popper.js\dist\esm\popper-utils.min.js" />
+    <Content Include="Conetent\Admin\assets\libs\popper.js\dist\esm\popper.min.js" />
+    <Content Include="Conetent\Admin\assets\libs\popper.js\dist\popper-utils.min.js" />
+    <Content Include="Conetent\Admin\assets\libs\popper.js\dist\popper.min.js" />
+    <Content Include="Conetent\Admin\assets\libs\popper.js\dist\umd\popper-utils.min.js" />
+    <Content Include="Conetent\Admin\assets\libs\popper.js\dist\umd\popper.min.js" />
+    <Content Include="Conetent\Admin\assets\libs\raphael\dev\banner.txt" />
+    <Content Include="Conetent\Admin\assets\libs\raphael\dev\raphael.amd.js" />
+    <Content Include="Conetent\Admin\assets\libs\raphael\dev\raphael.core.js" />
+    <Content Include="Conetent\Admin\assets\libs\raphael\dev\raphael.svg.js" />
+    <Content Include="Conetent\Admin\assets\libs\raphael\dev\raphael.vml.js" />
+    <Content Include="Conetent\Admin\assets\libs\raphael\dev\raphaelTest.html" />
+    <Content Include="Conetent\Admin\assets\libs\raphael\license.txt" />
+    <Content Include="Conetent\Admin\assets\libs\raphael\raphael.min.js" />
+    <Content Include="Conetent\Admin\assets\libs\raphael\raphael.no-deps.min.js" />
+    <Content Include="Conetent\Admin\authentication-login1.html" />
+    <Content Include="Conetent\Admin\authentication-register1.html" />
+    <Content Include="Conetent\Admin\chart-chart-js.html" />
+    <Content Include="Conetent\Admin\chart-knob.html" />
+    <Content Include="Conetent\Admin\chart-morris.html" />
+    <Content Include="Conetent\Admin\dist\css\fonts\Gilmer-Bold.svg" />
+    <Content Include="Conetent\Admin\dist\css\fonts\Gilmer-Heavy.svg" />
+    <Content Include="Conetent\Admin\dist\css\fonts\Gilmer-Medium.svg" />
+    <Content Include="Conetent\Admin\dist\css\fonts\Gilmer-Regular.svg" />
+    <Content Include="Conetent\Admin\dist\css\fonts\TofinoPersonal-Book.svg" />
+    <Content Include="Conetent\Admin\dist\css\fonts\TofinoPersonal-Medium.svg" />
+    <Content Include="Conetent\Admin\dist\css\fonts\TofinoPersonal-Regular.svg" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\css\fa-brands.css" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\css\fa-brands.min.css" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\css\fa-regular.css" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\css\fa-regular.min.css" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\css\fa-solid.css" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\css\fa-solid.min.css" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\css\fontawesome-all.css" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\css\fontawesome-all.min.css" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\css\fontawesome.css" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\css\fontawesome.min.css" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\webfonts\fa-brands-400.svg" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\webfonts\fa-regular-400.svg" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\webfonts\fa-solid-900.svg" />
+    <Content Include="Conetent\Admin\dist\css\icons\simple-line-icons\css\simple-line-icons.css" />
+    <Content Include="Conetent\Admin\dist\css\icons\simple-line-icons\fonts\Simple-Line-Icons.svg" />
+    <Content Include="Conetent\Admin\dist\css\icons\themify-icons\fonts\themify.svg" />
+    <Content Include="Conetent\Admin\dist\css\icons\themify-icons\ie7\ie7.css" />
+    <Content Include="Conetent\Admin\dist\css\icons\themify-icons\ie7\ie7.js" />
+    <Content Include="Conetent\Admin\dist\css\icons\themify-icons\themify-icons.css" />
+    <Content Include="Conetent\Admin\dist\css\style.css" />
+    <Content Include="Conetent\Admin\dist\css\style.min.css" />
+    <Content Include="Conetent\Admin\dist\js\app-style-switcher.js" />
+    <Content Include="Conetent\Admin\dist\js\app-style-switcher.min.js" />
+    <Content Include="Conetent\Admin\dist\js\custom.js" />
+    <Content Include="Conetent\Admin\dist\js\custom.min.js" />
+    <Content Include="Conetent\Admin\dist\js\feather.min.js" />
+    <Content Include="Conetent\Admin\dist\js\pages\calendar\cal-init.js" />
+    <Content Include="Conetent\Admin\dist\js\pages\calendar\cal-init.min.js" />
+    <Content Include="Conetent\Admin\dist\js\pages\chartist\chartist-init.css" />
+    <Content Include="Conetent\Admin\dist\js\pages\chartist\chartist-init.js" />
+    <Content Include="Conetent\Admin\dist\js\pages\chartist\chartist-init.min.js" />
+    <Content Include="Conetent\Admin\dist\js\pages\chartist\chartist-plugin-tooltip.js" />
+    <Content Include="Conetent\Admin\dist\js\pages\chartist\chartist-plugin-tooltip.min.js" />
+    <Content Include="Conetent\Admin\dist\js\pages\chartjs\chartjs.init.js" />
+    <Content Include="Conetent\Admin\dist\js\pages\chartjs\chartjs.init.min.js" />
+    <Content Include="Conetent\Admin\dist\js\pages\dashboards\dashboard1.js" />
+    <Content Include="Conetent\Admin\dist\js\pages\dashboards\dashboard1.min.js" />
+    <Content Include="Conetent\Admin\dist\js\pages\datatable\datatable-basic.init.js" />
+    <Content Include="Conetent\Admin\dist\js\pages\datatable\datatable-basic.init.min.js" />
+    <Content Include="Conetent\Admin\dist\js\pages\morris\morris-data.js" />
+    <Content Include="Conetent\Admin\dist\js\pages\morris\morris-data.min.js" />
+    <Content Include="Conetent\Admin\dist\js\sidebarmenu.js" />
+    <Content Include="Conetent\Admin\dist\js\sidebarmenu.min.js" />
+    <Content Include="Conetent\Admin\docs\docs-custom-chart-chartjs.html" />
+    <Content Include="Conetent\Admin\docs\docs-custom-datatables.html" />
+    <Content Include="Conetent\Admin\docs\docs-custom-widgets.html" />
+    <Content Include="Conetent\Admin\docs\docs-start.html" />
+    <Content Include="Conetent\Admin\docs\docs-ui-bootstrapui.html" />
+    <Content Include="Conetent\Admin\docs\docs-ui-breadcrumb.html" />
+    <Content Include="Conetent\Admin\docs\docs-ui-buttons.html" />
+    <Content Include="Conetent\Admin\docs\docs-ui-carousel.html" />
+    <Content Include="Conetent\Admin\docs\docs-ui-grid.html" />
+    <Content Include="Conetent\Admin\docs\docs-ui-listmedia.html" />
+    <Content Include="Conetent\Admin\docs\docs-ui-modals.html" />
+    <Content Include="Conetent\Admin\docs\docs-ui-notification.html" />
+    <Content Include="Conetent\Admin\docs\docs-ui-progressbar.html" />
+    <Content Include="Conetent\Admin\docs\docs-ui-scrollspy.html" />
+    <Content Include="Conetent\Admin\docs\docs-ui-spinner.html" />
+    <Content Include="Conetent\Admin\docs\docs-ui-tabs.html" />
+    <Content Include="Conetent\Admin\docs\docs-ui-toasts.html" />
+    <Content Include="Conetent\Admin\docs\docs-ui-tooltip-popover.html" />
+    <Content Include="Conetent\Admin\docs\docs-ui-typography.html" />
+    <Content Include="Conetent\Admin\docs\docs.html" />
+    <Content Include="Conetent\Admin\docs\highlights\highlight.min.css" />
+    <Content Include="Conetent\Admin\docs\highlights\highlight.min.js" />
+    <Content Include="Conetent\Admin\form-checkbox-radio.html" />
+    <Content Include="Conetent\Admin\form-input-grid.html" />
+    <Content Include="Conetent\Admin\form-inputs.html" />
+    <Content Include="Conetent\Admin\gulpfile.js" />
+    <Content Include="Conetent\Admin\icon-fontawesome.html" />
+    <Content Include="Conetent\Admin\icon-simple-lineicon.html" />
+    <Content Include="Conetent\Admin\icons8-create-24.png" />
+    <Content Include="Conetent\Admin\index.html" />
+    <Content Include="Conetent\Admin\src\ajaxemail.php" />
+    <Content Include="Conetent\Admin\src\counter.txt" />
+    <Content Include="Conetent\Admin\src\index.php" />
+    <Content Include="Conetent\Admin\table-basic.html" />
+    <Content Include="Conetent\Admin\table-dark-basic.html" />
+    <Content Include="Conetent\Admin\table-datatable-basic.html" />
+    <Content Include="Conetent\Admin\table-layout-coloured.html" />
+    <Content Include="Conetent\Admin\table-sizing.html" />
+    <Content Include="Conetent\Admin\ticket-list.html" />
+    <Content Include="Conetent\Admin\ui-bootstrap.html" />
+    <Content Include="Conetent\Admin\ui-breadcrumb.html" />
+    <Content Include="Conetent\Admin\ui-buttons.html" />
+    <Content Include="Conetent\Admin\ui-cards.html" />
+    <Content Include="Conetent\Admin\ui-carousel.html" />
+    <Content Include="Conetent\Admin\ui-grid.html" />
+    <Content Include="Conetent\Admin\ui-list-media.html" />
+    <Content Include="Conetent\Admin\ui-modals.html" />
+    <Content Include="Conetent\Admin\ui-notification.html" />
+    <Content Include="Conetent\Admin\ui-popover.html" />
+    <Content Include="Conetent\Admin\ui-progressbar.html" />
+    <Content Include="Conetent\Admin\ui-scrollspy.html" />
+    <Content Include="Conetent\Admin\ui-spinner.html" />
+    <Content Include="Conetent\Admin\ui-tab.html" />
+    <Content Include="Conetent\Admin\ui-toasts.html" />
+    <Content Include="Conetent\Admin\ui-tooltip-popover.html" />
+    <Content Include="Conetent\Admin\ui-typography.html" />
+    <Content Include="Conetent\cart\bag.html" />
+    <Content Include="Conetent\cart\deliveryAddress.html" />
+    <Content Include="Conetent\cart\payment.html" />
+    <Content Include="Conetent\cart\selectAddress.html" />
+    <Content Include="Conetent\cart\success.html" />
+    <Content Include="Conetent\cart\wishlist.html" />
+    <Content Include="Conetent\components\BeautyNavbarData.js" />
+    <Content Include="Conetent\components\footer.js" />
+    <Content Include="Conetent\components\mensNavbarData.js" />
+    <Content Include="Conetent\components\navbar.js" />
+    <Content Include="Conetent\components\sidebar_navMens.js" />
+    <Content Include="Conetent\components\sidebar_navWomens.js" />
+    <Content Include="Conetent\CSS\footer.css" />
+    <Content Include="Conetent\CSS\homeLanding.css" />
+    <Content Include="Conetent\CSS\index.css" />
+    <Content Include="Conetent\CSS\kidslandingPage.css" />
+    <Content Include="Conetent\CSS\navbar.css" />
+    <Content Include="Conetent\CSS\navbarmens.css" />
+    <Content Include="Conetent\CSS\sidebar_nav.css" />
+    <Content Include="Conetent\CSS\studio.css" />
+    <Content Include="Conetent\HTML\demo.html" />
+    <Content Include="Conetent\HTML\dom-hill-nimElTcTNyY-unsplash %281%29.jpg" />
+    <Content Include="Conetent\HTML\Eclipse-0.8s-48px.gif" />
+    <Content Include="Conetent\HTML\michael-dam-mEZ3PoFGs_k-unsplash.jpg" />
+    <Content Include="Conetent\HTML\naeim-jafari-6Xai7XxOgBc-unsplash.jpg" />
+    <Content Include="Conetent\HTML\napat-saeng-mVGW8j9rrC4-unsplash.jpg" />
+    <Content Include="Conetent\HTML\pexels-mikhail-nilov-6706804.mp4" />
+    <Content Include="Conetent\HTML\pexels-mikhail-nilov-6706806.mp4" />
+    <Content Include="Conetent\HTML\production ID_5205798.mp4" />
+    <Content Include="Conetent\HTML\rafaella-mendes-diniz-AoL-mVxprmk-unsplash.jpg" />
+    <Content Include="Conetent\HTML\success.png" />
+    <Content Include="Conetent\HTML\video.mp4" />
+    <Content Include="Conetent\images\Offer.PNG" />
+    <Content Include="Conetent\LandingPageHTML\beautylandingPage.html" />
+    <Content Include="Conetent\LandingPageHTML\HomeLandingPage.html" />
+    <Content Include="Conetent\LandingPageHTML\kidslandingPage.html" />
+    <Content Include="Conetent\LandingPageHTML\menlandingPage.html" />
+    <Content Include="Conetent\LandingPageHTML\studio.html" />
+    <Content Include="Conetent\LandingPageHTML\womanlandingPage.html" />
+    <Content Include="Conetent\login\login.css" />
+    <Content Include="Conetent\login\login.html" />
+    <Content Include="Conetent\login\login.js" />
+    <Content Include="Conetent\login\Rgister.js" />
+    <Content Include="Conetent\navebaritems\aromasHome.js" />
+    <Content Include="Conetent\navebaritems\bagsKids.js" />
+    <Content Include="Conetent\navebaritems\bedRunnersHome.js" />
+    <Content Include="Conetent\navebaritems\beltsMens.js" />
+    <Content Include="Conetent\navebaritems\bodySuitsKids.js" />
+    <Content Include="Conetent\navebaritems\braWomen.js" />
+    <Content Include="Conetent\navebaritems\briefWomen.js" />
+    <Content Include="Conetent\navebaritems\casualKids.js" />
+    <Content Include="Conetent\navebaritems\casualshirtmens.js" />
+    <Content Include="Conetent\navebaritems\casualShoesMens.js" />
+    <Content Include="Conetent\navebaritems\casualShoesWomen.js" />
+    <Content Include="Conetent\navebaritems\casualTrauserMens.js" />
+    <Content Include="Conetent\navebaritems\dressesKids.js" />
+    <Content Include="Conetent\navebaritems\dressesWomen.js" />
+    <Content Include="Conetent\navebaritems\faceBeauty.js" />
+    <Content Include="Conetent\navebaritems\flatsWomen.js" />
+    <Content Include="Conetent\navebaritems\flipFlopsKids.js" />
+    <Content Include="Conetent\navebaritems\hairBeauty.js" />
+    <Content Include="Conetent\navebaritems\handHome.js" />
+    <Content Include="Conetent\navebaritems\jeansmens.js" />
+    <Content Include="Conetent\navebaritems\kurtaSuitsWomen.js" />
+    <Content Include="Conetent\navebaritems\kurtisTunicsWomen.js" />
+    <Content Include="Conetent\navebaritems\lakmeBeauty.js" />
+    <Content Include="Conetent\navebaritems\lipsticBeauty.js" />
+    <Content Include="Conetent\navebaritems\matteressHome.js" />
+    <Content Include="Conetent\navebaritems\plantsHome.js" />
+    <Content Include="Conetent\navebaritems\rompersKids.js" />
+    <Content Include="Conetent\navebaritems\shampooBeauty.js" />
+    <Content Include="Conetent\navebaritems\shirtsKids.js" />
+    <Content Include="Conetent\navebaritems\smartWearables1Women.js" />
+    <Content Include="Conetent\navebaritems\smartWearablesWomen.js" />
+    <Content Include="Conetent\navebaritems\sportsShoesMens.js" />
+    <Content Include="Conetent\navebaritems\topsKids.js" />
+    <Content Include="Conetent\navebaritems\topsWomen.js" />
+    <Content Include="Conetent\navebaritems\towelsHome.js" />
+    <Content Include="Conetent\navebaritems\tShirtData.js" />
+    <Content Include="Conetent\navebaritems\tshirtmens.js" />
+    <Content Include="Conetent\navebaritems\tShirtsKids.js" />
+    <Content Include="Conetent\navebaritems\walletsMens.js" />
+    <Content Include="Conetent\navebaritems\watchesKids.js" />
+    <Content Include="Conetent\nav_itemsHTML\aromasHome.html" />
+    <Content Include="Conetent\nav_itemsHTML\bagsKids.html" />
+    <Content Include="Conetent\nav_itemsHTML\bedRunnerHome.html" />
+    <Content Include="Conetent\nav_itemsHTML\beltsMens.html" />
+    <Content Include="Conetent\nav_itemsHTML\bodySuitsKids.html" />
+    <Content Include="Conetent\nav_itemsHTML\braWomen.html" />
+    <Content Include="Conetent\nav_itemsHTML\briefWomen.html" />
+    <Content Include="Conetent\nav_itemsHTML\casualKids.html" />
+    <Content Include="Conetent\nav_itemsHTML\casualshirtMens.html" />
+    <Content Include="Conetent\nav_itemsHTML\casualShoesMens.html" />
+    <Content Include="Conetent\nav_itemsHTML\casualShoesWomen.html" />
+    <Content Include="Conetent\nav_itemsHTML\casualTrauser.html" />
+    <Content Include="Conetent\nav_itemsHTML\dresesKids.html" />
+    <Content Include="Conetent\nav_itemsHTML\dressesWomen.html" />
+    <Content Include="Conetent\nav_itemsHTML\faceBeauty.html" />
+    <Content Include="Conetent\nav_itemsHTML\flatsWomen.html" />
+    <Content Include="Conetent\nav_itemsHTML\flipFlopKids.html" />
+    <Content Include="Conetent\nav_itemsHTML\hairBeauty.html" />
+    <Content Include="Conetent\nav_itemsHTML\handHome.html" />
+    <Content Include="Conetent\nav_itemsHTML\inJeans.css" />
+    <Content Include="Conetent\nav_itemsHTML\inJeans.html" />
+    <Content Include="Conetent\nav_itemsHTML\inJeans.js" />
+    <Content Include="Conetent\nav_itemsHTML\inShirt.css" />
+    <Content Include="Conetent\nav_itemsHTML\inShirt.html" />
+    <Content Include="Conetent\nav_itemsHTML\inShirt.js" />
+    <Content Include="Conetent\nav_itemsHTML\insideMens.css" />
+    <Content Include="Conetent\nav_itemsHTML\insideMens.html" />
+    <Content Include="Conetent\nav_itemsHTML\insideMens.js" />
+    <Content Include="Conetent\nav_itemsHTML\jeansMens.html" />
+    <Content Include="Conetent\nav_itemsHTML\kurtaSuitsWomen.html" />
+    <Content Include="Conetent\nav_itemsHTML\kurtisTunicWomen.html" />
+    <Content Include="Conetent\nav_itemsHTML\lakmeBeauty.html" />
+    <Content Include="Conetent\nav_itemsHTML\lipsticBeauty.html" />
+    <Content Include="Conetent\nav_itemsHTML\mattressHome.html" />
+    <Content Include="Conetent\nav_itemsHTML\plantsHome.html" />
+    <Content Include="Conetent\nav_itemsHTML\rompersKids.html" />
+    <Content Include="Conetent\nav_itemsHTML\shampooBeauty.html" />
+    <Content Include="Conetent\nav_itemsHTML\shirtsKids.html" />
+    <Content Include="Conetent\nav_itemsHTML\smartWearablesWomen1.html" />
+    <Content Include="Conetent\nav_itemsHTML\smartWearableWomen.html" />
+    <Content Include="Conetent\nav_itemsHTML\sportsShoesMens.html" />
+    <Content Include="Conetent\nav_itemsHTML\topsKids.html" />
+    <Content Include="Conetent\nav_itemsHTML\topWomen.html" />
+    <Content Include="Conetent\nav_itemsHTML\towelHome.html" />
+    <Content Include="Conetent\nav_itemsHTML\tshirtMens.html" />
+    <Content Include="Conetent\nav_itemsHTML\tShirtsKids.html" />
+    <Content Include="Conetent\nav_itemsHTML\walletsMens.html" />
+    <Content Include="Conetent\nav_itemsHTML\watchesKids.html" />
+    <Content Include="Conetent\scripts\bag.js" />
+    <Content Include="Conetent\scripts\deliveryAddress.js" />
+    <Content Include="Conetent\scripts\index.js" />
+    <Content Include="Conetent\scripts\kidslandingPage.js" />
+    <Content Include="Conetent\scripts\manlandingPage.js" />
+    <Content Include="Conetent\scripts\payment.js" />
+    <Content Include="Conetent\scripts\selectAddress.js" />
+    <Content Include="Conetent\scripts\Studio.js" />
+    <Content Include="Conetent\scripts\teststorage.js" />
+    <Content Include="Conetent\scripts\top bag.PNG" />
+    <Content Include="Conetent\scripts\toppayment.PNG" />
+    <Content Include="Conetent\scripts\topselect.PNG" />
+    <Content Include="Conetent\scripts\wishlist.js" />
+    <Content Include="Conetent\scripts\wishlist.PNG" />
+    <Content Include="Conetent\scripts\womenlandingPage.js" />
+    <Content Include="Global.asax" />
+    <Content Include="Models\Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Product.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\User.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="Conetent\Admin\assets\extra-libs\datatables.net-bs4\package.json" />
+    <Content Include="Conetent\Admin\assets\extra-libs\datatables.net-bs4\Readme.md" />
+    <Content Include="Conetent\Admin\assets\extra-libs\datatables.net\package.json" />
+    <Content Include="Conetent\Admin\assets\extra-libs\datatables.net\Readme.md" />
+    <Content Include="Conetent\Admin\assets\extra-libs\taskboard\example1\load.json" />
+    <Content Include="Conetent\Admin\assets\extra-libs\taskboard\less\lobilist.less" />
+    <Content Include="Conetent\Admin\assets\extra-libs\taskboard\less\mixins.less" />
+    <Content Include="Conetent\Admin\assets\extra-libs\taskboard\less\variables.less" />
+    <Content Include="Conetent\Admin\assets\images\background\Thumbs.db" />
+    <Content Include="Conetent\Admin\assets\images\big\Thumbs.db" />
+    <Content Include="Conetent\Admin\assets\libs\bootstrap\dist\css\bootstrap-grid.css.map" />
+    <Content Include="Conetent\Admin\assets\libs\bootstrap\dist\css\bootstrap-grid.min.css.map" />
+    <Content Include="Conetent\Admin\assets\libs\bootstrap\dist\css\bootstrap-reboot.css.map" />
+    <Content Include="Conetent\Admin\assets\libs\bootstrap\dist\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Conetent\Admin\assets\libs\bootstrap\dist\css\bootstrap.css.map" />
+    <Content Include="Conetent\Admin\assets\libs\bootstrap\dist\css\bootstrap.min.css.map" />
+    <Content Include="Conetent\Admin\assets\libs\bootstrap\dist\js\bootstrap.bundle.js.map" />
+    <Content Include="Conetent\Admin\assets\libs\bootstrap\dist\js\bootstrap.bundle.min.js.map" />
+    <Content Include="Conetent\Admin\assets\libs\bootstrap\dist\js\bootstrap.js.map" />
+    <Content Include="Conetent\Admin\assets\libs\bootstrap\dist\js\bootstrap.min.js.map" />
+    <Content Include="Conetent\Admin\assets\libs\morris.js\bower.travis.json" />
+    <Content Include="Conetent\Admin\assets\libs\popper.js\dist\umd\poppper.js.flow" />
+    <Content Include="Conetent\Admin\dist\css\fonts\Gilmer-Bold.eot" />
+    <Content Include="Conetent\Admin\dist\css\fonts\Gilmer-Bold.otf" />
+    <Content Include="Conetent\Admin\dist\css\fonts\Gilmer-Bold.ttf" />
+    <Content Include="Conetent\Admin\dist\css\fonts\Gilmer-Bold.woff" />
+    <Content Include="Conetent\Admin\dist\css\fonts\Gilmer-Heavy.eot" />
+    <Content Include="Conetent\Admin\dist\css\fonts\Gilmer-Heavy.otf" />
+    <Content Include="Conetent\Admin\dist\css\fonts\Gilmer-Heavy.ttf" />
+    <Content Include="Conetent\Admin\dist\css\fonts\Gilmer-Heavy.woff" />
+    <Content Include="Conetent\Admin\dist\css\fonts\Gilmer-Medium.eot" />
+    <Content Include="Conetent\Admin\dist\css\fonts\Gilmer-Medium.otf" />
+    <Content Include="Conetent\Admin\dist\css\fonts\Gilmer-Medium.ttf" />
+    <Content Include="Conetent\Admin\dist\css\fonts\Gilmer-Medium.woff" />
+    <Content Include="Conetent\Admin\dist\css\fonts\Gilmer-Regular.eot" />
+    <Content Include="Conetent\Admin\dist\css\fonts\Gilmer-Regular.otf" />
+    <Content Include="Conetent\Admin\dist\css\fonts\Gilmer-Regular.ttf" />
+    <Content Include="Conetent\Admin\dist\css\fonts\Gilmer-Regular.woff" />
+    <Content Include="Conetent\Admin\dist\css\fonts\TofinoPersonal-Book.eot" />
+    <Content Include="Conetent\Admin\dist\css\fonts\TofinoPersonal-Book.otf" />
+    <Content Include="Conetent\Admin\dist\css\fonts\TofinoPersonal-Book.ttf" />
+    <Content Include="Conetent\Admin\dist\css\fonts\TofinoPersonal-Book.woff" />
+    <Content Include="Conetent\Admin\dist\css\fonts\TofinoPersonal-Medium.eot" />
+    <Content Include="Conetent\Admin\dist\css\fonts\TofinoPersonal-Medium.otf" />
+    <Content Include="Conetent\Admin\dist\css\fonts\TofinoPersonal-Medium.ttf" />
+    <Content Include="Conetent\Admin\dist\css\fonts\TofinoPersonal-Medium.woff" />
+    <Content Include="Conetent\Admin\dist\css\fonts\TofinoPersonal-Regular.eot" />
+    <Content Include="Conetent\Admin\dist\css\fonts\TofinoPersonal-Regular.otf" />
+    <Content Include="Conetent\Admin\dist\css\fonts\TofinoPersonal-Regular.ttf" />
+    <Content Include="Conetent\Admin\dist\css\fonts\TofinoPersonal-Regular.woff" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\less\fa-brands.less" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\less\fa-regular.less" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\less\fa-solid.less" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\less\fontawesome.less" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\less\_animated.less" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\less\_bordered-pulled.less" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\less\_core.less" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\less\_fixed-width.less" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\less\_icons.less" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\less\_larger.less" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\less\_list.less" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\less\_mixins.less" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\less\_rotated-flipped.less" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\less\_screen-reader.less" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\less\_stacked.less" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\less\_variables.less" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\scss\fa-brands.scss" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\scss\fa-regular.scss" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\scss\fa-solid.scss" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\scss\fontawesome.scss" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\scss\_animated.scss" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\scss\_core.scss" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\scss\_icons.scss" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\scss\_larger.scss" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\scss\_list.scss" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\scss\_mixins.scss" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\scss\_screen-reader.scss" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\scss\_stacked.scss" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\scss\_variables.scss" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\webfonts\fa-brands-400.eot" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\webfonts\fa-brands-400.ttf" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\webfonts\fa-brands-400.woff" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\webfonts\fa-brands-400.woff2" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\webfonts\fa-regular-400.eot" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\webfonts\fa-regular-400.ttf" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\webfonts\fa-regular-400.woff" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\webfonts\fa-regular-400.woff2" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\webfonts\fa-solid-900.eot" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\webfonts\fa-solid-900.ttf" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\webfonts\fa-solid-900.woff" />
+    <Content Include="Conetent\Admin\dist\css\icons\font-awesome\webfonts\fa-solid-900.woff2" />
+    <Content Include="Conetent\Admin\dist\css\icons\simple-line-icons\fonts\Simple-Line-Icons.eot" />
+    <Content Include="Conetent\Admin\dist\css\icons\simple-line-icons\fonts\Simple-Line-Icons.ttf" />
+    <Content Include="Conetent\Admin\dist\css\icons\simple-line-icons\fonts\Simple-Line-Icons.woff" />
+    <Content Include="Conetent\Admin\dist\css\icons\simple-line-icons\fonts\Simple-Line-Icons.woff2" />
+    <Content Include="Conetent\Admin\dist\css\icons\simple-line-icons\less\simple-line-icons.less" />
+    <Content Include="Conetent\Admin\dist\css\icons\simple-line-icons\scss\simple-line-icons.scss" />
+    <Content Include="Conetent\Admin\dist\css\icons\themify-icons\fonts\themify.eot" />
+    <Content Include="Conetent\Admin\dist\css\icons\themify-icons\fonts\themify.ttf" />
+    <Content Include="Conetent\Admin\dist\css\icons\themify-icons\fonts\themify.woff" />
+    <Content Include="Conetent\Admin\dist\css\icons\themify-icons\themify-icons.less" />
+    <Content Include="Conetent\Admin\dist\js\pages\datatable\data.json" />
+    <Content Include="Conetent\Admin\package-lock.json" />
+    <Content Include="Conetent\Admin\package.json" />
+    <Content Include="Conetent\Admin\scss\bootstrap\bootstrap-grid.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\bootstrap-reboot.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\bootstrap.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\mixins\_alert.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\mixins\_background-variant.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\mixins\_badge.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\mixins\_border-radius.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\mixins\_box-shadow.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\mixins\_breakpoints.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\mixins\_buttons.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\mixins\_caret.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\mixins\_clearfix.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\mixins\_deprecate.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\mixins\_float.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\mixins\_forms.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\mixins\_gradients.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\mixins\_grid-framework.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\mixins\_grid.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\mixins\_hover.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\mixins\_image.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\mixins\_list-group.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\mixins\_lists.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\mixins\_nav-divider.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\mixins\_pagination.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\mixins\_reset-text.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\mixins\_resize.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\mixins\_screen-reader.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\mixins\_size.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\mixins\_table-row.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\mixins\_text-emphasis.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\mixins\_text-hide.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\mixins\_text-truncate.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\mixins\_transition.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\mixins\_visibility.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\utilities\_align.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\utilities\_background.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\utilities\_borders.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\utilities\_clearfix.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\utilities\_display.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\utilities\_embed.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\utilities\_flex.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\utilities\_float.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\utilities\_overflow.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\utilities\_position.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\utilities\_screenreaders.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\utilities\_shadows.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\utilities\_sizing.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\utilities\_spacing.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\utilities\_stretched-link.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\utilities\_text.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\utilities\_visibility.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\vendor\_rfs.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\_alert.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\_badge.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\_breadcrumb.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\_button-group.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\_buttons.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\_card.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\_carousel.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\_close.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\_code.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\_custom-forms.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\_dropdown.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\_forms.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\_functions.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\_grid.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\_images.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\_input-group.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\_jumbotron.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\_list-group.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\_media.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\_mixins.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\_modal.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\_nav.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\_navbar.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\_pagination.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\_popover.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\_print.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\_progress.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\_reboot.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\_root.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\_spinners.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\_tables.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\_toasts.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\_tooltip.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\_transitions.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\_type.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\_utilities.scss" />
+    <Content Include="Conetent\Admin\scss\bootstrap\_variables.scss" />
+    <Content Include="Conetent\Admin\scss\config\default\_custom-variables.scss" />
+    <Content Include="Conetent\Admin\scss\config\default\_variables.scss" />
+    <Content Include="Conetent\Admin\scss\custom\components\_breadcrumb.scss" />
+    <Content Include="Conetent\Admin\scss\custom\components\_buttons.scss" />
+    <Content Include="Conetent\Admin\scss\custom\components\_card.scss" />
+    <Content Include="Conetent\Admin\scss\custom\components\_dropdown.scss" />
+    <Content Include="Conetent\Admin\scss\custom\components\_forms.scss" />
+    <Content Include="Conetent\Admin\scss\custom\components\_modal.scss" />
+    <Content Include="Conetent\Admin\scss\custom\components\_progress.scss" />
+    <Content Include="Conetent\Admin\scss\custom\components\_reboot.scss" />
+    <Content Include="Conetent\Admin\scss\custom\components\_tables.scss" />
+    <Content Include="Conetent\Admin\scss\custom\components\_tabs.scss" />
+    <Content Include="Conetent\Admin\scss\custom\pages\_authentication.scss" />
+    <Content Include="Conetent\Admin\scss\custom\pages\_chat-app.scss" />
+    <Content Include="Conetent\Admin\scss\custom\pages\_dashboard.scss" />
+    <Content Include="Conetent\Admin\scss\custom\pages\_grid.scss" />
+    <Content Include="Conetent\Admin\scss\custom\pages\_landingpage.scss" />
+    <Content Include="Conetent\Admin\scss\custom\plugins\_calendar.scss" />
+    <Content Include="Conetent\Admin\scss\custom\plugins\_chartist-charts.scss" />
+    <Content Include="Conetent\Admin\scss\custom\plugins\_perfect-scrollbar.scss" />
+    <Content Include="Conetent\Admin\scss\custom\structure\_layout.scss" />
+    <Content Include="Conetent\Admin\scss\custom\structure\_navbar.scss" />
+    <Content Include="Conetent\Admin\scss\custom\structure\_preloader.scss" />
+    <Content Include="Conetent\Admin\scss\custom\structure\_sidebar.scss" />
+    <Content Include="Conetent\Admin\scss\custom\theme-colors\_theme-colors.scss" />
+    <Content Include="Conetent\Admin\scss\fonts\landingpage_fonts.scss" />
+    <Content Include="Conetent\Admin\scss\icons\icons.scss" />
+    <Content Include="Conetent\Admin\scss\style.scss" />
+    <Content Include="Conetent\Admin\src\.ftpquota" />
+    <Content Include="Conetent\Admin\src\package.zip" />
+    <Content Include="Conetent\Admin\src\README.md" />
+    <EntityDeploy Include="Models\Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+    <None Include="packages.config" />
+    <Content Include="Views\Home_LayoutPage1.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\Home\Register.cshtml" />
+    <Content Include="Views\Home\BeautylandingPage.cshtml" />
+    <Content Include="Views\Home\MenlandingPage.cshtml" />
+    <Content Include="Views\Home\WomanlandingPage.cshtml" />
+    <Content Include="Views\Home\KidslandingPage.cshtml" />
+    <Content Include="Views\Home\Studio.cshtml" />
+    <Content Include="Views\Home\HomeLandingPage.cshtml" />
+    <Content Include="Views\Admin_LayoutPage1.cshtml" />
+    <Content Include="Views\Home\AdminPage.cshtml" />
+    <Content Include="Views\Admin\MyProfile.cshtml" />
+    <Content Include="Views\Admin\ProductList.cshtml" />
+    <Content Include="Views\Admin\AddProducts.cshtml" />
+    <Content Include="Views\Admin\EditProducts.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53602</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44350/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

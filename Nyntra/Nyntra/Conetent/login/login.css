@@ -1,0 +1,52 @@
+﻿body {
+    background-color: rgb(253,239,236);
+}
+
+#form {
+    width: 30%;
+    height: auto;
+    background-color: white;
+}
+
+#log {
+    display: flex;
+    justify-content: center;
+}
+
+#img_div {
+    width: 30%;
+}
+
+#o_div {
+    display: flex;
+    justify-content: center;
+}
+
+#img {
+    width: 100%;
+}
+
+#form > h2, p {
+    padding-left: 7%;
+}
+
+#email, #password, #role, #btn {
+    margin-left: 7%;
+}
+
+#email, #password, #role {
+    width: 80%;
+    height: 12%;
+    padding-left: 5%;
+}
+
+#btn {
+    width: 85%;
+    height: 13%;
+}
+
+a {
+    color: hotpink;
+    text-decoration: none;
+    cursor: pointer;
+}

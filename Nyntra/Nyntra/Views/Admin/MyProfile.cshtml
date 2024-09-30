@@ -1,0 +1,151 @@
+﻿
+@{
+    ViewBag.Title = "MyProfile";
+    Layout = "~/Views/Admin_LayoutPage1.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            /* Set height to the full viewport */
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+        }
+
+        .breadcrumb {
+            width: 100%;
+            max-width: 800px;
+            margin-bottom: 20px;
+        }
+
+            .breadcrumb a {
+                text-decoration: none;
+                color: #007bff;
+                font-size: 14px;
+            }
+
+        .profile-container {
+            display: flex;
+            max-width: 800px;
+            width: 100%;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-top: 100px;
+            margin-left: 500px;
+            align-items: center;
+        }
+
+        .profile-photo {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 40px;
+        }
+
+            .profile-photo img {
+                border-radius: 10px;
+                width: 180px;
+                height: 180px;
+                object-fit: cover;
+                border: 2px solid #007bff;
+            }
+
+        .divider {
+            width: 2px;
+            background-color: #ddd;
+            height: 100%;
+        }
+
+        .profile-info {
+            flex: 2;
+            padding-left: 40px;
+        }
+
+            .profile-info h2 {
+                font-size: 24px;
+                color: #333;
+                margin-bottom: 20px;
+                font-weight: 400;
+            }
+
+        .info-row {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: 18px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 8px;
+        }
+
+            .info-row strong {
+                color: #333;
+                font-weight: 500;
+                width: 150px;
+            }
+
+            .info-row span {
+                font-weight: normal;
+                color: #666;
+            }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="#">Home</a> / <a href="#">Profile</a>
+    </div>
+
+    <div class="profile-container">
+        <div class="profile-photo">
+            <img src="~/Conetent/Admin/assets/images/HeroImage.jpg" alt="User Photo">
+            
+
+        </div>
+
+        <!-- Adding vertical divider -->
+        <div class="divider"></div>
+
+        <div class="profile-info">
+            <h2>Admin Profile</h2>
+            <div class="info-row">
+                <strong>Full Name:</strong> <span>Nithish Kumar K M</span>
+            </div>
+            <div class="info-row">
+                <strong>Username:</strong> <span>Nithish</span>
+            </div>
+            <div class="info-row">
+                <strong>Email:</strong> <span>iamnithissh.india@gmail.com</span>
+            </div>
+            <div class="info-row">
+                <strong>Mobile:</strong> <span>9182463307</span>
+            </div>
+            <div class="info-row">
+                <strong>Post Code:</strong> <span>560036</span>
+            </div>
+            <div class="info-row">
+                <strong>Address:</strong> <span>Kr Puram ,Bangalore</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+

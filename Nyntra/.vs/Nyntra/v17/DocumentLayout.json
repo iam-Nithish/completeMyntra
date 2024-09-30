@@ -1,0 +1,645 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|c:\\users\\334712\\desktop\\bacup3\\nyntra\\nyntra\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|solutionrelative:nyntra\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\nyntra\\views\\admin\\editproducts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|solutionrelative:nyntra\\views\\admin\\editproducts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\nyntra\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|solutionrelative:nyntra\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\nyntra\\models\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|solutionrelative:nyntra\\models\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\nyntra\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|solutionrelative:nyntra\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\nyntra\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|solutionrelative:nyntra\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\nyntra\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|solutionrelative:nyntra\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\nyntra\\views\\admin_layoutpage1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|solutionrelative:nyntra\\views\\admin_layoutpage1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\nyntra\\views\\admin\\productlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|solutionrelative:nyntra\\views\\admin\\productlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\nyntra\\views\\admin\\addproducts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|solutionrelative:nyntra\\views\\admin\\addproducts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\nyntra\\conetent\\admin\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|solutionrelative:nyntra\\conetent\\admin\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\nyntra\\views\\home\\adminpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|solutionrelative:nyntra\\views\\home\\adminpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\nyntra\\views\\admin\\myprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|solutionrelative:nyntra\\views\\admin\\myprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\nyntra\\conetent\\admin\\docs\\docs-ui-spinner.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|solutionrelative:nyntra\\conetent\\admin\\docs\\docs-ui-spinner.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\nyntra\\conetent\\admin\\dist\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|solutionrelative:nyntra\\conetent\\admin\\dist\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\nyntra\\conetent\\admin\\ticket-list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|solutionrelative:nyntra\\conetent\\admin\\ticket-list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\nyntra\\conetent\\scripts\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|solutionrelative:nyntra\\conetent\\scripts\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\nyntra\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|solutionrelative:nyntra\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\nyntra\\views\\home\\kidslandingpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|solutionrelative:nyntra\\views\\home\\kidslandingpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\nyntra\\conetent\\scripts\\deliveryaddress.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|solutionrelative:nyntra\\conetent\\scripts\\deliveryaddress.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\nyntra\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|solutionrelative:nyntra\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\nyntra\\conetent\\components\\navbar.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|solutionrelative:nyntra\\conetent\\components\\navbar.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\nyntra\\conetent\\cart\\success.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|solutionrelative:nyntra\\conetent\\cart\\success.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\nyntra\\conetent\\scripts\\kidslandingpage.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|solutionrelative:nyntra\\conetent\\scripts\\kidslandingpage.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\nyntra\\conetent\\landingpagehtml\\homelandingpage.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|solutionrelative:nyntra\\conetent\\landingpagehtml\\homelandingpage.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\nyntra\\views\\home\\homelandingpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|solutionrelative:nyntra\\views\\home\\homelandingpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\nyntra\\conetent\\landingpagehtml\\kidslandingpage.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|solutionrelative:nyntra\\conetent\\landingpagehtml\\kidslandingpage.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\nyntra\\views\\home_layoutpage1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|solutionrelative:nyntra\\views\\home_layoutpage1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\nyntra\\views\\home\\studio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|solutionrelative:nyntra\\views\\home\\studio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\nyntra\\conetent\\landingpagehtml\\studio.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|solutionrelative:nyntra\\conetent\\landingpagehtml\\studio.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\nyntra\\views\\home\\womanlandingpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|solutionrelative:nyntra\\views\\home\\womanlandingpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\nyntra\\views\\home\\menlandingpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|solutionrelative:nyntra\\views\\home\\menlandingpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\nyntra\\conetent\\landingpagehtml\\womanlandingpage.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|solutionrelative:nyntra\\conetent\\landingpagehtml\\womanlandingpage.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\nyntra\\conetent\\landingpagehtml\\menlandingpage.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|solutionrelative:nyntra\\conetent\\landingpagehtml\\menlandingpage.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\nyntra\\views\\home\\beautylandingpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|solutionrelative:nyntra\\views\\home\\beautylandingpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\nyntra\\conetent\\landingpagehtml\\beautylandingpage.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|solutionrelative:nyntra\\conetent\\landingpagehtml\\beautylandingpage.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\nyntra\\conetent\\login\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|solutionrelative:nyntra\\conetent\\login\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\nyntra\\conetent\\components\\beautynavbardata.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|solutionrelative:nyntra\\conetent\\components\\beautynavbardata.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\nyntra\\views\\home\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{84F71004-00F7-47D0-B3EA-8783F7B9337A}|Nyntra\\Nyntra.csproj|solutionrelative:nyntra\\views\\home\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Model1.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Models\\Model1.edmx",
+              "RelativeDocumentMoniker": "Nyntra\\Models\\Model1.edmx",
+              "ToolTip": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Models\\Model1.edmx [Diagram1]",
+              "RelativeToolTip": "Nyntra\\Models\\Model1.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-09-30T12:24:28.971Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "web.config",
+              "DocumentMoniker": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Views\\web.config",
+              "RelativeDocumentMoniker": "Nyntra\\Views\\web.config",
+              "ToolTip": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Views\\web.config",
+              "RelativeToolTip": "Nyntra\\Views\\web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-09-30T12:12:19.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EditProducts.cshtml",
+              "DocumentMoniker": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Views\\Admin\\EditProducts.cshtml",
+              "RelativeDocumentMoniker": "Nyntra\\Views\\Admin\\EditProducts.cshtml",
+              "ToolTip": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Views\\Admin\\EditProducts.cshtml",
+              "RelativeToolTip": "Nyntra\\Views\\Admin\\EditProducts.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-30T10:18:28.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductList.cshtml",
+              "DocumentMoniker": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Views\\Admin\\ProductList.cshtml",
+              "RelativeDocumentMoniker": "Nyntra\\Views\\Admin\\ProductList.cshtml",
+              "ToolTip": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Views\\Admin\\ProductList.cshtml",
+              "RelativeToolTip": "Nyntra\\Views\\Admin\\ProductList.cshtml",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-30T09:21:55.265Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Admin_LayoutPage1.cshtml",
+              "DocumentMoniker": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Views\\Admin_LayoutPage1.cshtml",
+              "RelativeDocumentMoniker": "Nyntra\\Views\\Admin_LayoutPage1.cshtml",
+              "ToolTip": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Views\\Admin_LayoutPage1.cshtml",
+              "RelativeToolTip": "Nyntra\\Views\\Admin_LayoutPage1.cshtml",
+              "ViewState": "AQIAAJ0CAAAAAAAAAADgvzABAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-28T10:40:50.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Nyntra\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Nyntra\\Controllers\\AdminController.cs",
+              "ViewState": "AQIAAF8AAAAAAAAAAAAIwGgAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T10:40:20.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Nyntra\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Nyntra\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAawFIAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T06:08:27.906Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "Nyntra\\App_Start\\RouteConfig.cs",
+              "ToolTip": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "Nyntra\\App_Start\\RouteConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T08:32:50.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Web.config",
+              "RelativeDocumentMoniker": "Nyntra\\Web.config",
+              "ToolTip": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Web.config",
+              "RelativeToolTip": "Nyntra\\Web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEAAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-09-28T12:35:40.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AddProducts.cshtml",
+              "DocumentMoniker": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Views\\Admin\\AddProducts.cshtml",
+              "RelativeDocumentMoniker": "Nyntra\\Views\\Admin\\AddProducts.cshtml",
+              "ToolTip": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Views\\Admin\\AddProducts.cshtml",
+              "RelativeToolTip": "Nyntra\\Views\\Admin\\AddProducts.cshtml",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAAAEsAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-30T09:41:34.906Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "index.js",
+              "DocumentMoniker": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Conetent\\scripts\\index.js",
+              "RelativeDocumentMoniker": "Nyntra\\Conetent\\scripts\\index.js",
+              "ToolTip": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Conetent\\scripts\\index.js",
+              "RelativeToolTip": "Nyntra\\Conetent\\scripts\\index.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-27T13:04:49.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Conetent\\Admin\\index.html",
+              "RelativeDocumentMoniker": "Nyntra\\Conetent\\Admin\\index.html",
+              "ToolTip": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Conetent\\Admin\\index.html",
+              "RelativeToolTip": "Nyntra\\Conetent\\Admin\\index.html",
+              "ViewState": "AQIAANADAAAAAAAAAADwv+wDAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-09-28T10:43:01.756Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AdminPage.cshtml",
+              "DocumentMoniker": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Views\\Home\\AdminPage.cshtml",
+              "RelativeDocumentMoniker": "Nyntra\\Views\\Home\\AdminPage.cshtml",
+              "ToolTip": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Views\\Home\\AdminPage.cshtml",
+              "RelativeToolTip": "Nyntra\\Views\\Home\\AdminPage.cshtml",
+              "ViewState": "AQIAABMBAAAAAAAAAADgvxcBAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-28T13:24:32.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MyProfile.cshtml",
+              "DocumentMoniker": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Views\\Admin\\MyProfile.cshtml",
+              "RelativeDocumentMoniker": "Nyntra\\Views\\Admin\\MyProfile.cshtml",
+              "ToolTip": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Views\\Admin\\MyProfile.cshtml",
+              "RelativeToolTip": "Nyntra\\Views\\Admin\\MyProfile.cshtml",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAAAFcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-30T08:13:18.866Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ticket-list.html",
+              "DocumentMoniker": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Conetent\\Admin\\ticket-list.html",
+              "RelativeDocumentMoniker": "Nyntra\\Conetent\\Admin\\ticket-list.html",
+              "ToolTip": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Conetent\\Admin\\ticket-list.html",
+              "RelativeToolTip": "Nyntra\\Conetent\\Admin\\ticket-list.html",
+              "ViewState": "AQIAAAADAAAAAAAAAADgvxUAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-09-28T11:30:55.983Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "docs-ui-spinner.html",
+              "DocumentMoniker": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Conetent\\Admin\\docs\\docs-ui-spinner.html",
+              "RelativeDocumentMoniker": "Nyntra\\Conetent\\Admin\\docs\\docs-ui-spinner.html",
+              "ToolTip": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Conetent\\Admin\\docs\\docs-ui-spinner.html",
+              "RelativeToolTip": "Nyntra\\Conetent\\Admin\\docs\\docs-ui-spinner.html",
+              "ViewState": "AQIAAGMAAAAAAAAAAAAAADwAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-09-28T12:18:53.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "style.css",
+              "DocumentMoniker": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Conetent\\Admin\\dist\\css\\style.css",
+              "RelativeDocumentMoniker": "Nyntra\\Conetent\\Admin\\dist\\css\\style.css",
+              "ToolTip": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Conetent\\Admin\\dist\\css\\style.css",
+              "RelativeToolTip": "Nyntra\\Conetent\\Admin\\dist\\css\\style.css",
+              "ViewState": "AQIAANYGAAAAAAAAAADgvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-28T12:18:00.128Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "kidslandingPage.js",
+              "DocumentMoniker": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Conetent\\scripts\\kidslandingPage.js",
+              "RelativeDocumentMoniker": "Nyntra\\Conetent\\scripts\\kidslandingPage.js",
+              "ToolTip": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Conetent\\scripts\\kidslandingPage.js",
+              "RelativeToolTip": "Nyntra\\Conetent\\scripts\\kidslandingPage.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-27T13:05:46.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "success.html",
+              "DocumentMoniker": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Conetent\\cart\\success.html",
+              "RelativeDocumentMoniker": "Nyntra\\Conetent\\cart\\success.html",
+              "ToolTip": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Conetent\\cart\\success.html",
+              "RelativeToolTip": "Nyntra\\Conetent\\cart\\success.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-09-27T13:21:34.414Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "deliveryAddress.js",
+              "DocumentMoniker": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Conetent\\scripts\\deliveryAddress.js",
+              "RelativeDocumentMoniker": "Nyntra\\Conetent\\scripts\\deliveryAddress.js",
+              "ToolTip": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Conetent\\scripts\\deliveryAddress.js",
+              "RelativeToolTip": "Nyntra\\Conetent\\scripts\\deliveryAddress.js",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAqwF8AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-27T10:03:47.878Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "kidslandingPage.html",
+              "DocumentMoniker": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Conetent\\LandingPageHTML\\kidslandingPage.html",
+              "RelativeDocumentMoniker": "Nyntra\\Conetent\\LandingPageHTML\\kidslandingPage.html",
+              "ToolTip": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Conetent\\LandingPageHTML\\kidslandingPage.html",
+              "RelativeToolTip": "Nyntra\\Conetent\\LandingPageHTML\\kidslandingPage.html",
+              "ViewState": "AQIAAHwAAAAAAAAAAAAowIgAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-09-27T09:54:44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "navbar.js",
+              "DocumentMoniker": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Conetent\\components\\navbar.js",
+              "RelativeDocumentMoniker": "Nyntra\\Conetent\\components\\navbar.js",
+              "ToolTip": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Conetent\\components\\navbar.js",
+              "RelativeToolTip": "Nyntra\\Conetent\\components\\navbar.js",
+              "ViewState": "AQIAAN4BAAAAAAAAAAAjwPMBAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-26T09:27:04.012Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "studio.html",
+              "DocumentMoniker": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Conetent\\LandingPageHTML\\studio.html",
+              "RelativeDocumentMoniker": "Nyntra\\Conetent\\LandingPageHTML\\studio.html",
+              "ToolTip": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Conetent\\LandingPageHTML\\studio.html",
+              "RelativeToolTip": "Nyntra\\Conetent\\LandingPageHTML\\studio.html",
+              "ViewState": "AQIAABQAAAAAAAAAAAAmwDUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-09-27T10:00:35.784Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Studio.cshtml",
+              "DocumentMoniker": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Views\\Home\\Studio.cshtml",
+              "RelativeDocumentMoniker": "Nyntra\\Views\\Home\\Studio.cshtml",
+              "ToolTip": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Views\\Home\\Studio.cshtml",
+              "RelativeToolTip": "Nyntra\\Views\\Home\\Studio.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAC8AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-27T10:01:08.352Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "KidslandingPage.cshtml",
+              "DocumentMoniker": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Views\\Home\\KidslandingPage.cshtml",
+              "RelativeDocumentMoniker": "Nyntra\\Views\\Home\\KidslandingPage.cshtml",
+              "ToolTip": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Views\\Home\\KidslandingPage.cshtml",
+              "RelativeToolTip": "Nyntra\\Views\\Home\\KidslandingPage.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIUAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-27T09:56:05.212Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Views\\Home\\Login.cshtml",
+              "RelativeDocumentMoniker": "Nyntra\\Views\\Home\\Login.cshtml",
+              "ToolTip": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Views\\Home\\Login.cshtml",
+              "RelativeToolTip": "Nyntra\\Views\\Home\\Login.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-26T06:42:57.437Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Nyntra\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Nyntra\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAAFEAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-26T06:08:42.693Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "HomeLandingPage.html",
+              "DocumentMoniker": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Conetent\\LandingPageHTML\\HomeLandingPage.html",
+              "RelativeDocumentMoniker": "Nyntra\\Conetent\\LandingPageHTML\\HomeLandingPage.html",
+              "ToolTip": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Conetent\\LandingPageHTML\\HomeLandingPage.html",
+              "RelativeToolTip": "Nyntra\\Conetent\\LandingPageHTML\\HomeLandingPage.html",
+              "ViewState": "AQIAAMcAAAAAAAAAAAAowOgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-09-27T09:54:59.918Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "HomeLandingPage.cshtml",
+              "DocumentMoniker": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Views\\Home\\HomeLandingPage.cshtml",
+              "RelativeDocumentMoniker": "Nyntra\\Views\\Home\\HomeLandingPage.cshtml",
+              "ToolTip": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Views\\Home\\HomeLandingPage.cshtml",
+              "RelativeToolTip": "Nyntra\\Views\\Home\\HomeLandingPage.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-27T10:31:21.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "womanlandingPage.html",
+              "DocumentMoniker": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Conetent\\LandingPageHTML\\womanlandingPage.html",
+              "RelativeDocumentMoniker": "Nyntra\\Conetent\\LandingPageHTML\\womanlandingPage.html",
+              "ToolTip": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Conetent\\LandingPageHTML\\womanlandingPage.html",
+              "RelativeToolTip": "Nyntra\\Conetent\\LandingPageHTML\\womanlandingPage.html",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAmwI4AAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-09-27T09:42:39.077Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "WomanlandingPage.cshtml",
+              "DocumentMoniker": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Views\\Home\\WomanlandingPage.cshtml",
+              "RelativeDocumentMoniker": "Nyntra\\Views\\Home\\WomanlandingPage.cshtml",
+              "ToolTip": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Views\\Home\\WomanlandingPage.cshtml",
+              "RelativeToolTip": "Nyntra\\Views\\Home\\WomanlandingPage.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-27T09:43:31.171Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "MenlandingPage.cshtml",
+              "DocumentMoniker": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Views\\Home\\MenlandingPage.cshtml",
+              "RelativeDocumentMoniker": "Nyntra\\Views\\Home\\MenlandingPage.cshtml",
+              "ToolTip": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Views\\Home\\MenlandingPage.cshtml",
+              "RelativeToolTip": "Nyntra\\Views\\Home\\MenlandingPage.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-27T09:30:27.667Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "menlandingPage.html",
+              "DocumentMoniker": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Conetent\\LandingPageHTML\\menlandingPage.html",
+              "RelativeDocumentMoniker": "Nyntra\\Conetent\\LandingPageHTML\\menlandingPage.html",
+              "ToolTip": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Conetent\\LandingPageHTML\\menlandingPage.html",
+              "RelativeToolTip": "Nyntra\\Conetent\\LandingPageHTML\\menlandingPage.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIcAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-09-27T09:29:26.908Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "beautylandingPage.html",
+              "DocumentMoniker": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Conetent\\LandingPageHTML\\beautylandingPage.html",
+              "RelativeDocumentMoniker": "Nyntra\\Conetent\\LandingPageHTML\\beautylandingPage.html",
+              "ToolTip": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Conetent\\LandingPageHTML\\beautylandingPage.html",
+              "RelativeToolTip": "Nyntra\\Conetent\\LandingPageHTML\\beautylandingPage.html",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-09-27T08:32:20.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "BeautylandingPage.cshtml",
+              "DocumentMoniker": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Views\\Home\\BeautylandingPage.cshtml",
+              "RelativeDocumentMoniker": "Nyntra\\Views\\Home\\BeautylandingPage.cshtml",
+              "ToolTip": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Views\\Home\\BeautylandingPage.cshtml",
+              "RelativeToolTip": "Nyntra\\Views\\Home\\BeautylandingPage.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-27T08:25:37.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "login.html",
+              "DocumentMoniker": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Conetent\\login\\login.html",
+              "RelativeDocumentMoniker": "Nyntra\\Conetent\\login\\login.html",
+              "ToolTip": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Conetent\\login\\login.html",
+              "RelativeToolTip": "Nyntra\\Conetent\\login\\login.html",
+              "ViewState": "AQIAAEEAAAAAAAAAAAASwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-09-27T08:18:20.099Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "BeautyNavbarData.js",
+              "DocumentMoniker": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Conetent\\components\\BeautyNavbarData.js",
+              "RelativeDocumentMoniker": "Nyntra\\Conetent\\components\\BeautyNavbarData.js",
+              "ToolTip": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Conetent\\components\\BeautyNavbarData.js",
+              "RelativeToolTip": "Nyntra\\Conetent\\components\\BeautyNavbarData.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-27T07:29:52.084Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Views\\Home\\Register.cshtml",
+              "RelativeDocumentMoniker": "Nyntra\\Views\\Home\\Register.cshtml",
+              "ToolTip": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Views\\Home\\Register.cshtml",
+              "RelativeToolTip": "Nyntra\\Views\\Home\\Register.cshtml",
+              "ViewState": "AQIAAGkAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-26T10:59:12.881Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Home_LayoutPage1.cshtml",
+              "DocumentMoniker": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Views\\Home_LayoutPage1.cshtml",
+              "RelativeDocumentMoniker": "Nyntra\\Views\\Home_LayoutPage1.cshtml",
+              "ToolTip": "C:\\Users\\334712\\Desktop\\bacup3\\Nyntra\\Nyntra\\Views\\Home_LayoutPage1.cshtml",
+              "RelativeToolTip": "Nyntra\\Views\\Home_LayoutPage1.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-26T05:50:18.856Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

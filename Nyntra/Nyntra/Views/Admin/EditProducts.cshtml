@@ -1,0 +1,122 @@
+﻿@model Nyntra.Models.Product
+@{
+    ViewBag.Title = "EditProducts";
+    Layout = "~/Views/Admin_LayoutPage1.cshtml";
+}
+
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    Tell the browser to be responsive to screen width
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    Favicon icon
+    <link rel="icon" type="image/png" sizes="16x16" href="~/Conetent/Admin/assets/images/favicon.png">
+    <title>Adminmart Template - The Ultimate Multipurpose admin template</title>
+    This page css
+    Custom CSS
+    <link href="~/Conetent/Admin/dist/css/style.min.css" rel="stylesheet">
+    HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    WARNING: Respond.js doesn't work if you view the page via file://
+    [if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+
+        <div class="page-breadcrumb">
+            <div class="row">
+                <div class="col-7 align-self-center">
+                    <h4 class="page-title text-truncate text-dark font-weight-medium mb-1">Add Product</h4>
+                    <div class="d-flex align-items-center">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb m-0 p-0">
+                                <li class="breadcrumb-item"><a href="Index" class="text-muted">Menu</a></li>
+                                <li class="breadcrumb-item text-muted active" aria-current="page">Product List</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-5 align-self-center">
+                    <div class="customize-input float-right">
+                        <select class="custom-select custom-select-set form-control bg-white border-0 custom-shadow custom-radius">
+                            <option selected>Aug 19</option>
+                            <option value="1">July 19</option>
+                            <option value="2">Jun 19</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+
+
+
+                               
+
+                                @using (Html.BeginForm("EditProducts", "Admin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                                {
+                                    @Html.HiddenFor(model => model.ProductID)
+
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.ProductName)
+                                        @Html.TextBoxFor(model => model.ProductName, new { @class = "form-control" })
+                                    </div>
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.ProductPrice)
+                                        @Html.TextBoxFor(model => model.ProductPrice, new { @class = "form-control" })
+                                    </div>
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.ProductDescription)
+                                        @Html.TextAreaFor(model => model.ProductDescription, new { @class = "form-control" })
+                                    </div>
+                                    <div class="form-group">
+                                        @Html.Label("Product Image")
+                                        <input type="file" name="file" />
+                                        <img src="@Url.Content(Model.ProductImage)" alt="Product Image" style="width: 100px; height: 100px;" />
+                                    </div>
+                                    <input type="submit" value="Save" class="btn btn-primary" />
+                                }
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="~/Conetent/Admin/assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="~/Conetent/Admin/assets/libs/popper.js/dist/umd/popper.min.js"></script>
+    <script src="~/Conetent/Admin/assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="~/Conetent/Admin/dist/js/app-style-switcher.js"></script>
+    <script src="~/Conetent/Admin/dist/js/feather.min.js"></script>
+    <script src="~/Conetent/Admin/assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
+    <script src="~/Conetent/Admin/dist/js/sidebarmenu.js"></script>
+
+    <script src="~/Conetent/Admin/dist/js/custom.min.js"></script>
+</body>
+
+</html>
+

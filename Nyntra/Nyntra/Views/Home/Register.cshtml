@@ -1,0 +1,181 @@
+﻿
+@model Nyntra.Models.User
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Home_LayoutPage1.cshtml";
+}
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <style>
+        body {
+            background-color: #fdefee;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 18px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            width: 330px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        h2 {
+            font-size: 20px; /* Reduced font size by 10% */
+            color: #333;
+            margin-bottom: 16px; /* Reduced margin by 10% */
+        }
+
+        input[type="text"], input[type="email"], input[type="password"], select {
+            width: 100%;
+            padding: 8px; /* Reduced padding by 10% */
+            margin-bottom: 12px; /* Reduced margin by 10% */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px; /* Reduced font size by 10% */
+            height: 38px; /* Reduced height by 10% */
+            box-sizing: border-box;
+        }
+
+        .terms {
+            font-size: 12px; /* Reduced font size by 10% */
+            color: #666;
+            margin-bottom: 16px; /* Reduced margin by 10% */
+        }
+
+            .terms a {
+                color: hotpink;
+                text-decoration: none;
+            }
+
+        input[type="submit"] {
+            background-color: #f0f0f0;
+            border: none;
+            padding: 10px; /* Reduced padding by 10% */
+            width: 100%;
+            font-size: 14px; /* Reduced font size by 10% */
+            color: #333;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 8px; /* Reduced margin by 10% */
+        }
+
+        .help-text {
+            font-size: 12px; /* Reduced font size by 10% */
+            color: #666;
+        }
+
+            .help-text a {
+                color: hotpink;
+                text-decoration: none;
+            }
+        .container img {
+            max-width: 100%; /* Removed padding */
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px; /* Added margin to create space below the image */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2022/3/16/d4edb37c-aee8-4989-86f4-33b117edd4bc1647415464555-Banner_Login-Landing-page--1-.jpg" alt="Promotional Image">
+
+        <h2>Register</h2>
+        @using (Html.BeginForm("Register", "Home", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+            @Html.TextBoxFor(m => m.Fullname, new { @placeholder = "Full Name", @required = "required", @id = "full-name" })<br>
+            @Html.TextBoxFor(m => m.Email, new { @placeholder = "Enter your Email ID", @required = "required", @id = "email" })<br><br>
+            @Html.PasswordFor(m => m.Password, new { @placeholder = "Enter your Password", @required = "required", @id = "password" })<br><br>
+            @Html.DropDownListFor(m => m.Role, new SelectList(new List<SelectListItem>
+            {
+                new SelectListItem { Text = "Select Role", Value = "" },
+                new SelectListItem { Text = "User", Value = "User" },
+                new SelectListItem { Text = "Admin", Value = "Admin" }
+            }, "Value", "Text"), new { @id = "role", @required = "required" })<br><br>
+
+            <p class="terms">By continuing, I agree to the <a href="https://www.myntra.com/termsofuse">Terms of Use & Privacy Policy</a></p>
+
+            <input id="btn" type="submit" value="Register"><br><br>
+            <p class="help-text">Already have an account? <a href="@Url.Action("Login", "Home")">Login here</a></p>
+        }
+    </div>
+
+    @*<script>
+            document.querySelector("form").addEventListener("submit", handleRegisterSubmit);
+
+            // Function to handle registration form submission
+            function handleRegisterSubmit(event) {
+                event.preventDefault(); // Prevent form default action (page reload)
+
+                const fullName = document.querySelector("#full-name").value.trim(); // Trim whitespace
+                const email = document.querySelector("#email").value.trim();
+                const password = document.querySelector("#password").value.trim();
+                const role = document.querySelector("#role").value; // Get selected role
+
+                // Full Name validation
+                if (!fullName) {
+                    alert("Please enter your full name");
+                    return false;
+                }
+
+                // Email validation
+                if (!email) {
+                    alert("Please enter your email ID");
+                    return false;
+                }
+
+                // Simple email validation pattern
+                const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+                if (!emailPattern.test(email)) {
+                    alert("Please enter a valid email address");
+                    return false;
+                }
+
+                // Password validation
+                if (!password) {
+                    alert("Please enter your password");
+                    return false;
+                }
+
+                if (password.length < 6) {
+                    alert("Password should be at least 6 characters long");
+                    return false;
+                }
+
+                // Role validation
+                if (!role) {
+                    alert("Please select a role");
+                    return false;
+                }
+
+                // If everything is valid, submit the form
+                document.querySelector("form").submit();
+                return true;
+            }
+        </script>*@
+</body>
+</html>
